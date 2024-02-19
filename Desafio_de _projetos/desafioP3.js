@@ -39,31 +39,6 @@
 //   guerreiro atacou usando espada
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Vilao {
     constructor(nome, idade, tipo) {
         this.nome =nome;
