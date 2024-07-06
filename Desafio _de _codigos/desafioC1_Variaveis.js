@@ -23,8 +23,8 @@
 // 3	Posicao final do heroi: 5
 
 
-const posicaoInicial = parseInt(gets());
-const totalPassos = parseInt(gets());
+const posicaoInicial = parseInt(gets())
+const totalPassos = parseInt(gets())
 
 const posicaoFinal = posicaoInicial + totalPassos
 
