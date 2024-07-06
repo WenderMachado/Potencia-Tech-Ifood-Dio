@@ -35,28 +35,39 @@
 
 
 
-let nomeVilao = "Carlinhos";
-let xpHeroi = 9500;
-let lvl = ["Fraco", "Bronze", "Prata", "Ouro", "Platina", "Ascendente", "Imortal"];
+let nomeHeroi = ""
+let xpHeroi = 0
+let lvl = [
+  "Fraco",
+  "Bronze",
+  "Prata",
+  "Ouro",
+  "Platina",
+  "Ascendente",
+  "Imortal",
+]
 
-switch (true) {
-    case xpHeroi <= 1000:
-        console.log("O heroi de nome " + nomeVilao + " está no nível " + lvl[0]);
-        break;
-    case xpHeroi >= 1001 && xpHeroi <= 2000:
-        console.log("O heroi de nome " + nomeVilao + " está no nível " + lvl[1]);
-        break;
-    case xpHeroi >= 2001 && xpHeroi <= 5000:
-        console.log("O heroi de nome " + nomeVilao + " está no nível " + lvl[2]);
-        break;
-    case xpHeroi >= 5001 && xpHeroi <= 7000:
-        console.log("O heroi de nome " + nomeVilao + " está no nível " + lvl[3]);
-        break;
-    case xpHeroi >= 7001 && xpHeroi <= 9000:
-        console.log("O heroi de nome " + nomeVilao + " está no nível " + lvl[4]);
-        break;
-    case xpHeroi >= 9001 && xpHeroi <= 10000:
-        console.log("O heroi de nome " + nomeVilao + " está no nível " + lvl[5]);
-        break;
-    
-}
+do {
+  nomeHeroi = prompt("Insira o nome do herói");
+  xpHeroi = parseInt(prompt("Insira o XP do herói"), 10)
+
+  if (xpHeroi <= 1000) {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[0])
+  } else if (xpHeroi <= 2000) {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[1])
+  } else if (xpHeroi <= 5000) {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[2])
+  } else if (xpHeroi <= 7000) {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[3])
+  } else if (xpHeroi <= 9000) {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[4])
+  } else if (xpHeroi <= 10000) {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[5])
+  } else {
+    alert("O herói de nome " + nomeHeroi + " está no nível " + lvl[6])
+  }
+} while (xpHeroi <= 10002)
+
+alert(xpHeroi)
+
+
