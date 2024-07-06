@@ -29,28 +29,31 @@
 // aqui fiz parecido com o projeto anterio, porém usando função e usando outra estrutura de decisão//
 
 
+let nivel = ""
+let vitorias = parseInt(prompt("Quantas vitórias o jogador teve?"))
+let derrotas = parseInt(prompt("Quantas derrotas o jogador teve?"))
+
 function calculandoVitoria(vitorias, derrotas) {
-    let saldoDeVitorias = vitorias - derrotas;
-    let nivel = "";
-
-    if (vitorias < 10) {
-        nivel = "Ferro";
-    } else if (vitorias >= 11 && vitorias <= 20) {
-        nivel = "Bronze";
-    } else if (vitorias >= 21 && vitorias <= 50) {
-        nivel = "Prata";
-    } else if (vitorias >= 51 && vitorias <= 80) {
-        nivel = "Ouro";
-    } else if (vitorias >= 81 && vitorias <= 90) {
-        nivel = "Diamante";
-    } else if (vitorias >= 91 && vitorias <= 100) {
-        nivel = "Lendário";
-    } else {
-        nivel = "Imortal";
-    }
-
-    console.log("O Herói tem um saldo de " + saldoDeVitorias + " e está no nível de " + nivel);
+  let saldoDeVitorias = vitorias - derrotas
+  return saldoDeVitorias
 }
 
+let saldo = calculandoVitoria(vitorias, derrotas)
 
-calculandoVitoria(75, 26);
+if (vitorias < 10) {
+  nivel = "Ferro"
+} else if (vitorias >= 11 && vitorias <= 20) {
+  nivel = "Bronze"
+} else if (vitorias >= 21 && vitorias <= 50) {
+  nivel = "Prata"
+} else if (vitorias >= 51 && vitorias <= 80) {
+  nivel = "Ouro"
+} else if (vitorias >= 81 && vitorias <= 90) {
+  nivel = "Diamante"
+} else if (vitorias >= 91 && vitorias <= 100) {
+  nivel = "Lendário"
+} else {
+  nivel = "Imortal"
+}
+
+alert("O Herói tem um saldo de " + saldo + " e está no nível de " + nivel)
