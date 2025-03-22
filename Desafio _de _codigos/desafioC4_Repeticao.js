@@ -37,18 +37,18 @@
 //- "print": imprime um texto de saída (output), pulando linha.
 
 
-const totalSalas = parseInt(gets());
+const totalSalas = parseInt(gets())
 
-const salasComTesouro = [2, 4, 7];
-const salasComMonstro = [3, 6, 8];
+const salasComTesouro = [2, 4, 7]
+const salasComMonstro = [3, 6, 8]
 
 for (let sala = 1; sala <= totalSalas; sala++) {
-    const temTesouro = salasComTesouro.includes(sala);
-    const temMonstro = salasComMonstro.includes(sala);
+    const temTesouro = salasComTesouro.includes(sala)
+    const temMonstro = salasComMonstro.includes(sala)
 
     if (temTesouro === true) {
-        print("Tesouro na sala " + sala + "!");
+        print("Tesouro na sala " + sala + "!")
     } else if (temMonstro === true) {
-        print("Monstro na sala " + sala + "!");
+        print("Monstro na sala " + sala + "!")
     }
 }
