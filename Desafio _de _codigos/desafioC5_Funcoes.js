@@ -29,11 +29,15 @@
 // 2: Ferro
 
 
-const quantidadeGolpes = parseInt(gets());
-
-const minerais = ["Carvao", "Ferro", "Diamante", "Pedra"];
-
-for (let i = 1; i <= quantidadeGolpes; i++) {
-  let minaIndex = (i - 1) % minerais.length;
-  print(`${i}: ${minerais[minaIndex]}`);
+function mineracao(qtdGolpes) {
+  
+    const mineros = ["Carvao", "Ferro", "Diamante", "Pedra"]
+    
+    for (let i = 1; i <= qtdGolpes; i++) {
+        let minerio = mineros[(i - 1) % mineros.length]
+        
+     
+        console.log(`${i}: ${minerio}`)
+    }
 }
+mineracao(4)
