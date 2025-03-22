@@ -23,9 +23,9 @@
 // 3	Posicao final do heroi: 5
 
 
-const posicaoInicial = parseInt(gets())
-const totalPassos = parseInt(gets())
+function jornadaDoHeroi(posicaoInicial, numeroDePassos) {
+    let posicaoFinal = posicaoInicial + numeroDePassos;
+    console.log(`Posicao final do heroi: ${posicaoFinal}`);
+}
 
-const posicaoFinal = posicaoInicial + totalPassos
-
-console.log("Posicao final do heroi:", posicaoFinal)
+ojornadaDoHeroi(2, 3)
