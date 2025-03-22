@@ -40,10 +40,10 @@
 // 45
 // 40	Voce ganhou 180000 XP!
 
+function calcXp(nvlMonster, nlvBattle){
+  const xpGanho = nvlMonster * nvlBattle * 100
+  return xpGanho
+}
 
-let num1 = parseInt(gets());
-let num2 = parseInt(gets());
 
-const xpGanho = num1 * num2 * 100;
-
-print("Voce ganhou " + xpGanho + " XP!");
+console.log(`xp ganho: ${xpGanho} `);
