@@ -27,7 +27,7 @@
 // Ao final deve se exibir uma mensagem:
 // "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
 // aqui fiz parecido com o projeto anterio, porém usando função e usando outra estrutura de decisão//
-
+// funciona bem em 2025
 
 let nivel = ""
 let vitorias = parseInt(prompt("Quantas vitórias o jogador teve?"))
